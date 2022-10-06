@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vote.VoteLogin">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="157.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail :" wrappingWidth="47.01171875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="153.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="235.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold Italic" size="44.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwordfield" layoutX="226.0" layoutY="230.0" />
+            <TextField fx:id="emailfield" layoutX="226.0" layoutY="179.0" />
+            <Button fx:id="enter" layoutX="263.0" layoutY="287.0" mnemonicParsing="false" onAction="#loginbuttonaction" text="Enter" />
+            <Text fx:id="loginmessagelable" fill="RED" layoutX="176.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="218.39996337890625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

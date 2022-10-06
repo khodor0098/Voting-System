@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #00CED1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Election.addelectioncontroller">
+    <top>
+        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add A New Election" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Baskerville Old Face" size="20.0" />
+            </font>
+        </Text>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#f7f7f7" layoutX="33.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="13.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Election Name :">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="335.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End date :">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="18.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Owner ID :">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="331.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start date :">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="eidfield" layoutX="122.0" layoutY="33.0" />
+                <TextField fx:id="namefield" layoutX="122.0" layoutY="137.0" />
+                <TextField fx:id="Oidfield" layoutX="122.0" layoutY="82.0" />
+                <Button fx:id="Cancel" layoutY="269.0" mnemonicParsing="false" style="-fx-background-color: #00CED1;">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="50" />
+                    </graphic>
+                </Button>
+                <Button fx:id="addnewv" layoutX="541.0" layoutY="269.0" mnemonicParsing="false" style="-fx-background-color: #00CED1;">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SAVE" size="50" />
+                    </graphic>
+                </Button>
+                <Text fx:id="Errormessage" fill="RED" layoutX="219.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.93675231933594" />
+            <DatePicker fx:id="sdate" layoutX="420.0" layoutY="33.0" />
+            <DatePicker fx:id="edate" layoutX="421.0" layoutY="85.0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainvoting.Controller">
+   <top>
+      <HBox prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: #00CED1;" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="26.0" prefWidth="362.0" style="-fx-background-color: #00CED1;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Region prefHeight="27.0" prefWidth="397.0" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="453.0" prefWidth="76.0" style="-fx-background-color: #00CED1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="Electionbtn" mnemonicParsing="false" onAction="#Electionbtn" prefHeight="26.0" prefWidth="80.0" text="Elections" />
+            <Region prefHeight="30.0" prefWidth="76.0" />
+            <Button fx:id="Voterbtn" mnemonicParsing="false" onAction="#voterbtn" prefHeight="26.0" prefWidth="79.0" text="Voters" />
+            <Region prefHeight="30.0" prefWidth="76.0" />
+            <Button fx:id="candidatebtn" mnemonicParsing="false" onAction="#candidatebtn" text="Candidates" />
+            <Region prefHeight="30.0" prefWidth="76.0" />
+            <Button fx:id="voteid" mnemonicParsing="false" onAction="#votepage" prefHeight="26.0" prefWidth="78.0" text="Vote" />
+            <Region prefHeight="30.0" prefWidth="76.0" />
+            <Button fx:id="logoutbtn" mnemonicParsing="false" onAction="#Logoutbtn" prefHeight="26.0" prefWidth="76.0" text="Logout" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="panel" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

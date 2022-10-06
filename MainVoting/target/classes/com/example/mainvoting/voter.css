@@ -1,0 +1,64 @@
+
+
+#VoterTable{
+    -fx-background-radius:30;
+}
+
+#VoterTable .column-header-background{
+    -fx-background-color:#00CED1;
+    -fx-background-radius:30;
+    -fx-background-insets: 0 0 10 0;
+    -fx-padding:0 0  10 0;
+}
+
+#VoterTable .column-header, #VoterTable .filler{
+    -fx-size: 40;
+    -f-border-width:0 0 10 0;
+    -fx-background-color:transparent;
+}
+
+#VoterTable .column-header .label{
+    -fx-text-fill:white;
+}
+
+#ElectionTable{
+    -fx-background-radius:30;
+}
+
+#ElectionTable .column-header-background{
+    -fx-background-color:#00CED1;
+    -fx-background-radius:30;
+    -fx-background-insets: 0 0 10 0;
+    -fx-padding:0 0  10 0;
+}
+
+#ElectionTable .column-header, #ElectionTable .filler{
+    -fx-size: 40;
+    -f-border-width:0 0 10 0;
+    -fx-background-color:transparent;
+}
+
+#ElectionTable .column-header .label{
+    -fx-text-fill:white;
+}
+
+#CandidateTable{
+    -fx-background-radius:30;
+}
+
+#CandidateTable .column-header-background{
+    -fx-background-color:#00CED1;
+    -fx-background-radius:30;
+    -fx-background-insets: 0 0 10 0;
+    -fx-padding:0 0  10 0;
+}
+
+#CandidateTable .column-header, #CandidateTable .filler{
+    -fx-size: 40;
+    -f-border-width:0 0 10 0;
+    -fx-background-color:transparent;
+}
+
+#CandidateTable .column-header .label{
+    -fx-text-fill:white;
+}
